@@ -3,79 +3,59 @@
 
 <head>
 
-<title>CapCut Pro India</title>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CapCut Pro India</title>
 
 <style>
 
 body{
-
 background:#070716;
 font-family:Arial,sans-serif;
 color:white;
 text-align:center;
 padding:20px;
-
 }
 
 .box{
-
-max-width:400px;
+max-width:420px;
 margin:auto;
-
 padding:25px;
-
 border-radius:25px;
-
 background:#111127;
-
-box-shadow:0 0 40px #7b2cff;
-
+box-shadow:0 0 35px #7b2cff;
 }
 
-.logo{
+.offer{
 
-width:90px;
+background:red;
 
-border-radius:20px;
+padding:15px;
+
+border-radius:50px;
+
+font-weight:bold;
+
+display:inline-block;
 
 margin-bottom:20px;
 
 }
 
-.badge{
-
-background:red;
-
-padding:12px 25px;
-
-border-radius:50px;
-
-display:inline-block;
-
-font-weight:bold;
-
-margin-bottom:25px;
-
-}
-
 h1{
 
-font-size:45px;
+font-size:56px;
 
 margin:10px 0;
 
 }
 
-.price{
+h2{
 
-font-size:70px;
+font-size:22px;
 
-color:#00ff88;
-
-font-weight:bold;
+color:#ddd;
 
 }
 
@@ -83,17 +63,39 @@ font-weight:bold;
 
 text-decoration:line-through;
 
-color:gray;
+opacity:.5;
 
-font-size:25px;
+font-size:32px;
+
+}
+
+.price{
+
+font-size:80px;
+
+color:#00ff88;
+
+font-weight:bold;
+
+margin-top:20px;
+
+}
+
+.timer{
+
+font-size:34px;
+
+color:#ffcc00;
+
+margin:25px 0;
 
 }
 
 .feature{
 
-font-size:24px;
+font-size:30px;
 
-margin:18px;
+margin:15px 0;
 
 }
 
@@ -101,17 +103,17 @@ margin:18px;
 
 display:block;
 
-background:#00d64f;
+background:#00e65c;
 
 padding:22px;
 
 border-radius:50px;
 
-color:white;
-
-font-size:28px;
+font-size:36px;
 
 font-weight:bold;
+
+color:white;
 
 text-decoration:none;
 
@@ -119,13 +121,43 @@ margin-top:30px;
 
 }
 
-.timer{
+.payment{
 
-font-size:30px;
+margin-top:70px;
 
-color:#ffd000;
+padding:25px;
 
-margin:20px 0;
+border-radius:20px;
+
+background:#191932;
+
+}
+
+.payment img{
+
+width:100%;
+
+border-radius:20px;
+
+}
+
+.scan{
+
+font-size:34px;
+
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+.upi{
+
+font-size:20px;
+
+opacity:.8;
+
+margin-top:15px;
 
 }
 
@@ -137,7 +169,7 @@ margin:20px 0;
 
 <div class="box">
 
-<div class="badge">
+<div class="offer">
 
 LIMITED TIME OFFER
 
@@ -203,15 +235,47 @@ Lifetime Premium Access
 
 </div>
 
-<a class="btn"
-
-href="#">
+<a class="btn" href="#payment">
 
 BUY NOW ₹199
 
 </a>
 
 </div>
+
+
+<div class="payment" id="payment">
+
+<h2>
+
+Scan & Pay
+
+</h2>
+
+<img src="qr.png">
+
+<div class="scan">
+
+📱 Google Pay / PhonePe / Paytm
+
+</div>
+
+<div class="upi">
+
+UPI ID
+
+8005607652@okbizaxis
+
+</div>
+
+<p>
+
+After payment send screenshot for activation
+
+</p>
+
+</div>
+
 
 </body>
 
