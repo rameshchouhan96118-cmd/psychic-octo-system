@@ -199,8 +199,7 @@ Lifetime Premium Access
 
 </div>
 
-<div class="timer">
-
+<div class="timer" id="countdown">
 ⏳ 30:00
 
 </div>
@@ -275,7 +274,29 @@ After payment send screenshot for activation
 </p>
 
 </div>
+<script>
 
+let time = 1800;
+
+setInterval(function(){
+
+let minutes = Math.floor(time / 60);
+let seconds = time % 60;
+
+if(seconds < 10){
+seconds = "0" + seconds;
+}
+
+document.getElementById("countdown").innerHTML =
+"⏳ " + minutes + ":" + seconds;
+
+if(time > 0){
+time--;
+}
+
+},1000);
+
+</script>
 
 </body>
 
